@@ -1,0 +1,32 @@
+<div class="color">
+  <form  autocomplete="on" style="color:bisque;">
+    <div class="back">
+      <button type="button" class="search">
+      <a href='/moviedetail'>Back</a>
+    </button>
+    </div>
+    <div class="dis">
+     <button type="button" class="search"> <a href='/login'>Logout</a></button>
+    </div>
+    <br>
+    <br>
+    <label for="enter" style="margin-left:210px;">Enter the name of the movie:</label>
+
+    <input type="text"  style="margin-left:5px;"#mname>
+    <button type="submit" class="search"(click)="input(mname.value)">SEARCH</button>
+  </form>
+
+  <br>
+  <br>
+
+  <div class="card"  style="width:19rem;margin:7px;background-color:lightslategrey; "*ngFor="let m of movies">
+    <img  class="card-img-top" [src]="m.Poster" alt="{{m.title}}">
+    <div class="card-body">
+      <h4>{{m.Title}}</h4>
+      <p>ReleaseDate:{{m.Year}}</p>
+      <p>Type:{{m.Type}}</p>
+    </div>
+    <!-- <div class="img"> -->
+  </div>
+
+</div>
