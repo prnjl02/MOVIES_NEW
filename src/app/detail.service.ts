@@ -7,7 +7,7 @@ import { map } from "rxjs/operators";
   providedIn: "root",
 })
 export class DetailService {
-  private _url: string = "http://www.omdbapi.com/?apikey=2a127d67&s=";
+  private _url: string = "https://www.omdbapi.com/?apikey=2a127d67&s=";
 
   constructor(private http: HttpClient) {}
 
